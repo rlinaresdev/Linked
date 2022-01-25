@@ -1,5 +1,5 @@
 <?php
-namespace Malla;
+namespace Linked;
 
 /*
  *---------------------------------------------------------
@@ -9,9 +9,11 @@ namespace Malla;
 */
 
 class Kernel {
-   
+
 	public function providers() {
 		return [
+         \Linked\Providers\LinkedServiceProvider::class,
+         \Linked\Providers\RouteServiceProvider::class
 		];
 	}
 

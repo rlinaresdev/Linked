@@ -1,5 +1,5 @@
 <?php
-namespace Malla\Providers;
+namespace Linked\Providers;
 
 /*
  *---------------------------------------------------------
@@ -12,9 +12,10 @@ use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Translation\Translator;
 use Illuminate\Support\ServiceProvider;
 
-class MallaServiceProject extends ServiceProvider {
+class LinkedServiceProvider extends ServiceProvider {
 
    public function boot( Kernel $HTTP, Translator $LANG ) {
+      require_once(__DIR__."/../../Http/App.php");
    }
 
    public function register() {

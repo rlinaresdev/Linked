@@ -1,6 +1,6 @@
 {
-    "name": "rlinaresdev/malla",
-    "description": "Gestor de aplicaciones",
+    "name": "rlinaresdev/linked",
+    "description": "Gestor de aplicaciones corporativas",
     "keywords": ["php", "laravel", "manager"],
     "license": "MIT",
     "type": "package",
@@ -14,11 +14,9 @@
         "php": ">=7.3"
     },
     "autoload": {
-        "classmap": [
-        ],
         "psr-4": {
-            "Malla\\": "/System/",
-            "Malla\\Http": "/Http/"
+            "Linked\\": "/System/",
+            "Linked\\Http\\": "/Http/"
         }
     },
     "config": {
