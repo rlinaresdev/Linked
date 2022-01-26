@@ -1,4 +1,5 @@
 <?php
+namespace Linked\Http\Support;
 
 /*
  *---------------------------------------------------------
@@ -7,5 +8,15 @@
  *---------------------------------------------------------
 */
 
+class HomeSupport {
 
-Route::get( "/", "HomeController@index" );
+   protected $app;
+
+   public function __construct( ) {
+   }
+
+   public function data() {
+      return [
+      ];
+   }
+}
